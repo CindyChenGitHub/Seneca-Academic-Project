@@ -1,3 +1,10 @@
+/********************************************************************** 
+// OOP244 Workshop 1: Compiling modular source code 
+// File graph.cpp 
+// Version 1.0 
+// Date 2018/01/10 
+// Author Cindy Chen 
+/**********************************************************************/ 
 #include <iostream>
 using namespace std;
 #include "tools.h"
@@ -11,7 +18,6 @@ int menu() {
 	cout << "> ";
 	return getInt(0, 3);
 }
-
 // Performs a fool-proof integer entry
 int getInt(int min, int max) {
 	int val;
