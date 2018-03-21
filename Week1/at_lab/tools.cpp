@@ -1,6 +1,6 @@
 /********************************************************************** 
 // OOP244 Workshop 1: Compiling modular source code 
-// File graph.cpp 
+// File tools.cpp 
 // Version 1.0 
 // Date 2018/01/10 
 // Author Cindy Chen 
