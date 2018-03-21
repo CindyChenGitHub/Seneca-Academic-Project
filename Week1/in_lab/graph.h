@@ -8,7 +8,6 @@
 
 // Maximum number of samples in an graph
 #define MAX_NO_OF_SAMPLES 20
-
 // Fills the samples array with the statistic samples
 void getSamples(int samples[], int noOfSamples);
 // Finds the largest sample in the samples array, if it is larger than 70,
