@@ -1,3 +1,5 @@
+
+
 // Maximum number of samples in an graph
 #define MAX_NO_OF_SAMPLES 20
 
@@ -10,4 +12,3 @@ int findMax(int samples[], int noOfSamples);
 void printBar(int val, int max);
 // Prints a graph comparing the sample values visually 
 void printGraph(int samples[], int noOfSamples);
-
