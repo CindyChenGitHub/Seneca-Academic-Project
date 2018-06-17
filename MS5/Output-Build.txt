@@ -1,0 +1,4 @@
+﻿1>------ Build started: Project: MS5, Configuration: Debug Win32 ------
+1>ms5_tester.cpp
+1>MS5.vcxproj -> G:\[OOP 244]\OOP-Project-master\MS5\Debug\MS5.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
