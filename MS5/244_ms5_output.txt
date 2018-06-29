@@ -1,5 +1,5 @@
 Script started on Sun 08 Apr 2018 09:43:42 PM EDT
-fardad.soleimanloo@matrix:~/oop244/DEV/FinalProject/DEV/MS5> ms5
+
 --Product test:
 ----Taxed validation test:
 Enter the following: 

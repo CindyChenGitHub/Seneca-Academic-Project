@@ -1,5 +1,4 @@
-Script started on Tue 10 Apr 2018 09:41:40 PM EDT
-ychen465@matrix:~/ws224/MS4> ms4
+Script started on Tue 10 Apr 2018 09:41:40 PM EDT
 Linear: one two 
 As is: 
 one

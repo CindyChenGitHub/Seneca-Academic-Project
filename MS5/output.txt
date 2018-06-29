@@ -1,5 +1,5 @@
 Script started on Sun 15 Apr 2018 06:57:09 PM EDT
-ychen465@matrix:~/ws224/MS5> ms5
+
 --Product test:
 ----Taxed validation test:
 Enter the following: 

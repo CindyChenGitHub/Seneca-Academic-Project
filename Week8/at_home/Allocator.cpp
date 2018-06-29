@@ -1,3 +1,6 @@
+// -----------------------------------------------------------
+//Student:  YC    Date: 2018-04-06
+////////////////////////////////////////////////////////////////
 #include <cstring>
 #include "SavingsAccount.h" 
 #include "ChequingAccount.h"

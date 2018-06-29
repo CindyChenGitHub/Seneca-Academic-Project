@@ -1,5 +1,5 @@
 Script started on Tue 10 Apr 2018 03:52:26 PM EDT
-ychen465@matrix:~/ws224/MS3> ms3
+
 Begin Testing the Program!
 Empty Product:
        |                    |   0.00|   0|          |   0|

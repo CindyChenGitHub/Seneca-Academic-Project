@@ -2,7 +2,7 @@
 // Version 1.0
 // iProduct.h
 // -----------------------------------------------------------
-//Student:  Yue Chen    Date: 2018-04-15
+//Student:  YC    Date: 2018-04-15
 ////////////////////////////////////////////////////////////////
 #ifndef AMA_IPRODUCT_H_
 #define AMA_IPRODUCT_H_

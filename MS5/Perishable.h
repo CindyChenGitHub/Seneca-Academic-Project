@@ -2,7 +2,7 @@
 // Version 1.0
 // Perishable.h
 // -----------------------------------------------------------
-//Student:  Yue Chen    Date: 2018-04-15
+//Student:  YC    Date: 2018-04-15
 ////////////////////////////////////////////////////////////////
 #ifndef AMA_PERISHABLE_H_
 #define AMA_PERISHABLE_H_

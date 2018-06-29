@@ -1,5 +1,3 @@
-Script started on Fri 16 Mar 2018 08:01:59 PM EDT
-ychen465@matrix:~/ws224/MS1> ms1
 Checking defined and constant values: 
 Passed!
 Checking define values for error code in Data.h

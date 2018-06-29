@@ -9,7 +9,7 @@
 //
 // Revision History
 // -----------------------------------------------------------
-// Name               Date                 Reason
+// Name：YC               Date：09 Apr 2018     
 /////////////////////////////////////////////////////////////////
 #define _CRT_SECURE_NO_WARNINGS
 #ifdef TAB

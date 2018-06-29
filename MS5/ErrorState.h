@@ -2,7 +2,7 @@
 // Version 1.0
 // ErrorState.h
 // -----------------------------------------------------------
-//Student:  Yue Chen    Date: 2018-04-15
+//Student:  YC    Date: 2018-04-15
 ////////////////////////////////////////////////////////////////
 #ifndef AMA_ERRORSTATE_H_
 #define AMA_ERRORSTATE_H_

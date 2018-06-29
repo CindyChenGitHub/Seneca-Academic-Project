@@ -2,7 +2,7 @@
 // Version 1.0
 // Perishable.cpp
 // -----------------------------------------------------------
-//Student:  Yue Chen    Date: 2018-04-15
+//Student:  YC    Date: 2018-04-15
 ////////////////////////////////////////////////////////////////
 #define _CRT_SECURE_NO_WARNINGS
 #ifdef TAB

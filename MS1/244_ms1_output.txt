@@ -1,5 +1,5 @@
 Script started on Sun 15 Oct 2017 09:16:26 PM EDT
-fardad.soleimanloo@matrix:~/oop244/DEV/FinalProject/DEV/OOP-Milestone1> ms1
+
 Checking defined and constant values: 
 Passed!
 Checking define values for error code in Data.h

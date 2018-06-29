@@ -1,5 +1,5 @@
 Script started on Mon 09 Apr 2018 05:03:55 PM EDT
-fardad.soleimanloo@matrix:~/oop244/DEV/FinalProject/DEV/MS4> ms4
+
 Linear: one two 
 As is: 
 one

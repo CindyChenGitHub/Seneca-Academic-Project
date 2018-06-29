@@ -1,5 +1,5 @@
 Script started on Mon 19 Mar 2018 11:25:18 PM EDT
-fardad.soleimanloo@matrix:~/oop244/DEV/FinalProject/DEV/MS3> ms3
+
 Begin Testing the Program!
 Empty Product:
        |                    |   0.00|   0|          |   0|

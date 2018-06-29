@@ -1,6 +1,6 @@
 // Workshop 6 - Class with a Resource
 // w6_at_home.cpp
-// Yue Chen
+// Name：YC
 // 2018/03/18
 
 #define _CRT_SECURE_NO_WARNINGS
