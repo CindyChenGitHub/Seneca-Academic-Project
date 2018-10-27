@@ -43,7 +43,7 @@ public class ReadInteger {
 	 * @param void
 	 * @return void
 	 */
-	public void pause(String in_read) {
+	private void pause(String in_read) {
 		System.out.println("Your input is : " + in_read + "\n~Press Any Key to Continue...");
 		Scanner pause = new Scanner(System.in);
 		pause.nextLine();

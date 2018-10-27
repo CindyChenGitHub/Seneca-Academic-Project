@@ -33,17 +33,18 @@ public class PrintInt{
 	 */
     public static void main(String[] args) {
     	// read an integer number
-    	ReadInteger readInt = new ReadInteger(35,79);
+    	ReadInteger readInt = new ReadInteger();
+    	//ReadInteger readInt = new ReadInteger(35,79);
     	// Format printing
     	formatPrint(readInt.read());
     }
 }
-//Output:
-//Please input a integer number: 76
-//Your input is : 76
-//~Press Any Key to Convert...
-//
-//Your Integer in Binary is: 1001100
-//Your Integer in Octal is: 114
-//Your Integer in Hexadecimal is: 4c
-//Its Hex-float-point reciprocal is: 0x1.af286cp-7
+//	Output:
+//	Please input a integer number: 76
+//	Your input is : 76
+//	~Press Any Key to Continue...
+//	
+//	Your Integer in Binary is: 1001100
+//	Your Integer in Octal is: 114
+//	Your Integer in Hexadecimal is: 4c
+//	Its Hex-float-point reciprocal is: 0x1.af286cp-7

@@ -2,8 +2,8 @@ package PrintCalendar;
 import java.time.LocalDate;
 import PrintCalendar.ReadInteger;
 public class PrintCalendar {
-	Integer year;
-	Integer month;
+	private Integer year;
+	private Integer month;
 	//LocalDate firstDay; 
 	
 	PrintCalendar(){
@@ -30,7 +30,7 @@ public class PrintCalendar {
 	public Integer getMonth() {
 		return month;
 	}
-	public void printTitle() {
+	private void printTitle() {
 		LocalDate firstDay = LocalDate.of(year, month, 1);
 		String title = firstDay.getMonth() + " " + firstDay.getYear();
 		int blankNum = (28-title.length())/2;
@@ -42,12 +42,12 @@ public class PrintCalendar {
 			System.out.print(" " + s);
 		System.out.print('\n');
 	}
-	public void printBlank() {
+	private void printBlank() {
 		LocalDate firstDay = LocalDate.of(year, month, 1);
 		for(int i = 1; i<firstDay.getDayOfWeek().getValue(); i++)
 			System.out.print("    ");
 	}
-	public void printDates() {
+	private void printDates() {
 		LocalDate firstDay = LocalDate.of(year, month, 1);
 		LocalDate date = firstDay;
 		while(date.getMonthValue() == month) {
@@ -60,12 +60,31 @@ public class PrintCalendar {
 			date=date.plusDays(1);
 		};
 	}
+	public void printCalendar() {
+		printTitle();
+		printBlank();
+		printDates();
+	}
 	public static void main(String[] args) {
 		PrintCalendar calendar = new PrintCalendar();
 		calendar.setYear();
 		calendar.setMonth();
-		calendar.printTitle();
-		calendar.printBlank();
-		calendar.printDates();
+		calendar.printCalendar();
 	}
 }
+//	Output:
+//	Please input a integer number between 2000 and 2050: 2012
+//	Your input is : 2012
+//	~Press Any Key to Continue...
+//	
+//	Please input a integer number between 1 and 12: 2
+//	Your input is : 2
+//	~Press Any Key to Continue...
+//	
+//	       FEBRUARY 2012
+//	 Mon Tue Wed Thu Fri Sat Sun
+//	           1   2   3   4   5
+//	   6   7   8   9  10  11  12
+//	  13  14  15  16  17  18  19
+//	  20  21  22  23  24  25  26
+//	  27  28  29
