@@ -9,13 +9,15 @@ public class PrintInt{
     public static void main(String[] args) {
     	// read an integer number
     	int num = 0;
-    	@SuppressWarnings("resource")
-		Scanner in = new Scanner(System.in);
-    	System.out.print("Please input a number: ");
     	boolean again = false;
     	do {
-	    	if(in.hasNextInt())
+    		@SuppressWarnings("resource")
+    		Scanner in = new Scanner(System.in);
+	    	System.out.print("Please input a integer number: ");
+	    	if(in.hasNextInt()) {
 	    		num = in.nextInt();
+	    		again = false;
+	    	}
 	    	else {
 	    		System.out.println("Please try again:");
 	    		again = true;
