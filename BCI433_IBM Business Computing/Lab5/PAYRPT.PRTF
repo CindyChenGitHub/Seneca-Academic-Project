@@ -1,0 +1,56 @@
+000001190307     A          R TITLE
+000002190307     A                                  1 40'Weekly Payroll Report'
+000003190307     A                                  1  3DATE(*YY)
+000004190307     A                                      EDTCDE(Y)
+000005190307     A                                  1 14TIME
+000006190307     A                                  1 88'Page:'
+000007190307     A                                  1 95PAGNBR
+000008190307     A                                  2  3'Name: Yue Chen'
+000009190307     A          R COLHDG                    SPACEB(1)
+000010190307     A                                     4'Employee'
+000011190307     A                                      SPACEB(1)
+000012190307     A                                    19'Work'
+000013190307     A                                    31'Pay'
+000014190307     A                                    41'Hourly'
+000015190307     A                                    52'Hours'
+000016190307     A                                    65'Regular'
+000017190307     A                                    78'Overtime'
+000018190307     A                                    92'Total'
+000019190307     A                                     4'Number'
+000020190307     A                                      SPACEB(1)
+000021190307     A                                    19'Shift'
+000022190307     A                                    30'Grade'
+000023190307     A                                    42'Rate'
+000024190307     A                                    52'Worked'
+000025190307     A                                    67'Pay'
+000026190307     A                                    80'Pay'
+000034190307     A                                    93'Pay'
+000036190307     A          R EMPDETAIL                 SPACEB(2)
+000057190307     A            EMPNUM    R    9S 0      3REFFLD(ALLSHIFT/EMPNUM SENECAPAY/AL-
+000058190307     A                                      LSHIFT)
+000059190307     A                                      EDTWRD('0   -   -   ')
+000061190307     A            WORKSHIFT R    1A       20REFFLD(ALLSHIFT/WORKSHIFT +
+000062190307     A                                      SENECAPAY/ALLSHIFT)
+000063190307     A            PAYGRADE  R             32REFFLD(ALLSHIFT/PAYGRADE +
+000064190307     A                                      SENECAPAY/ALLSHIFT)
+000065190307     A            HOURLYRATE     5  2     41EDTCDE(1)
+000066190307     A            HRSWORKED R             53REFFLD(ALLSHIFT/HRSWORKED +
+000067190307     A                                      SENECAPAY/ALLSHIFT)
+000068190307     A            REGULARPAY     7  2     64EDTCDE(1)
+000069190307     A            OVERPAY        7  2     77EDTCDE(1)
+000070190307     A            TOTALPAY       7  2     90EDTCDE(1)
+000071190307     A          R TOTALS                    SPACEB(2)
+000072190307     A                                    42'Totals:'
+000073190307     A            TOTREGPAY      9  2     53EDTCDE(1 $)
+000075190307     A            TOTOVTPAY      9  2     69EDTCDE(1 $)
+000077190307     A            TOTEMPPAY      9  2     86EDTCDE(1 $)
+000100
+000101190308     A*%%RS+<record-sequences>
+000102190308     A*%%RS+ <sequence name="Report1">
+000103190308     A*%%RS+  <device type="printer" width="132" height="66" />
+000104190308     A*%%RS+  <record-write record-format="TITLE" />
+000105190308     A*%%RS+  <record-write record-format="COLHDG" />
+000106190308     A*%%RS+  <record-write record-format="EMPDETAIL" />
+000107190308     A*%%RS+  <record-write record-format="TOTALS" />
+000108190308     A*%%RS+ </sequence>
+000109190308     A*%%RS </record-sequences>

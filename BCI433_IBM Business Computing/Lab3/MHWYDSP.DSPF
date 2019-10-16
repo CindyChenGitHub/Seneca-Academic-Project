@@ -1,0 +1,45 @@
+000001190303     A          R MTOLLINFO
+000002190303     A                                  1  2USER
+000003190303     A                                  2  2'YUE CHEN'
+000004190303     A                                  1 63DATE
+000005190303     A                                      EDTCDE(Y)
+000006190303     A                                  2 18'H I G H W A Y    4 0 8    T O L L -
+000007190303     A                                      S'
+000008190303     A                                  3 27'Trip Information'
+000009190303     A                                  5 10'Kilometers traveled:'
+000010190303     A            KILOMETERS     3  0B  5 34RANGE(0 999)
+000011190303     A  99                                  DSPATR(PR)
+000012190303     A                                  7 10'Type of Vehicle:'
+000013190303     A            VEHICLE        1   B  7 28VALUES('L' 'H' 'M')
+000014190303     A  99                                  DSPATR(PR)
+000015190303     A                                  7 33'(L - Light, H - Heavy, M - Multipl-
+000016190303     A                                      e Heavy)'
+000017190303     A                                  9 10'Time of Day:'
+000018190303     A            HOUR           2  0B  9 25RANGE(1 12)
+000019190303     A  99                                  DSPATR(PR)
+000020190303     A                                  9 29'(01 -12)'
+000021190303     A            AMPM           2   B  9 39VALUES('AM' 'PM')
+000022190303     A  99                                  DSPATR(PR)
+000023190303     A                                  9 43'(AM or PM)'
+000024190303     A                                 11 10'Transponder:'
+000025190303     A            TRANSPNDR      1A  B 11 25VALUES('Y' 'N')
+000026190303     A  99                                  DSPATR(PR)
+000027190303     A                                 11 29'(Y N)'
+000028190303     A          R MSHOWTOLL                 CF03(03 'Exit')
+000029190303     A                                      OVERLAY
+000030190303     A                                 13 23'Applicable Toll charges'
+000031190303     A                                 15 10'Toll Rate:'
+000032190303     A            TOLLRATE       5Y 4O 15 23EDTCDE(1 $)
+000033190303     A                                 17 10'Toll Charge:'
+000034190303     A            TOLLCHARGE     5Y 2O 17 23EDTCDE(1 $)
+000035190303     A                                 19 10'No Transponder Charge:'
+000036190303     A            NOTRANSF       4  2O 19 33EDTCDE(1)
+000037190303     A                                 21 10'T o t a l C h a r g e:'
+000038190303     A            TOTALDUE       5  2O 21 33EDTWRD('   .  ')
+000039190303     A                                 23  4'F3 - Exit'
+000100
+000101190303     A*%%RS+<record-sequences>
+000102190303     A*%%RS+ <sequence name="Untitled">
+000103190303     A*%%RS+  <device type="display" width="80" height="24" />
+000104190303     A*%%RS+ </sequence>
+000105190303     A*%%RS </record-sequences>

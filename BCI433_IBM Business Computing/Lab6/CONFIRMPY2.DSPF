@@ -1,0 +1,22 @@
+000001190308     A          R RECORD1
+000002190307     A                                  1  2'WS433C05'
+000003190307     A                                  2  2'Yue Chen'
+000004190307     A                                  1 26'Payroll Program Completed'
+000005190307     A                                  1 71DATE
+000006190307     A                                      EDTCDE(Y)
+000007190307     A                                  3 15'Rates:'
+000008190307     A                                  4 23'Day Rate:'
+000009190308     A            DAYRATE        5  2O  4 40EDTCDE(1)
+000010190307     A                                  5 23'Afternoon Rate:'
+000011190308     A            AFTNRATE       5  2O  5 40EDTCDE(1)
+000012190307     A                                  6 23'Night Rate:'
+000013190308     A            NIGHTRATE      5  2O  6 40EDTCDE(1)
+000015190320     A                                  9 15'Totals:'
+000016190320     A                                 10 23'Regular Pay:'
+000017190320     A            TOTREGPAY      9  2O 10 40EDTCDE(1)
+000018190320     A                                 11 23'Overtime Pay:'
+000019190320     A            TOTOVTPAY      9  2O 11 40EDTCDE(1)
+000020190320     A                                 12 23'Company Payout:'
+000021190320     A            TOTEMPPAY      9  2O 12 40EDTCDE(1 $)
+000022190320     A            SHIFTTYPE     30   O  8 24
+000100

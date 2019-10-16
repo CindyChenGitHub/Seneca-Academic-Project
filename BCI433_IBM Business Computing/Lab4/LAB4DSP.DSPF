@@ -1,0 +1,30 @@
+000100190116     A                                      DSPSIZ(24 80 *DS3)
+000200190116     A          R RECORD1
+000201190215     A                                      CF03(03 ' Exit')
+000202190215     A                                      OVERLAY
+000203190215     A                                      CF21(21 'Comand Line')
+000300190116     A                                  1 38'Lab 4'
+000400190207     A                                  3  3'Please select one of the following-
+000500190116     A                                       options:'
+000600190207     A                                  6 14'2.  Maximum Invalid Signon Attempt-
+000700190116     A                                      s allowed'
+000800190207     A                                  5 14'1.  Run Instructor''s Tickets Prog-
+000900190116     A                                      ram'
+001000190207     A                                  7 14'3.  Signed on User''s Message Queu-
+001100190116     A                                      e'
+001200190207     A                                 11 17'Option:'
+001300190116     A                                 23  4'F3=Exit'
+001400190116     A                                 23 17'F21=Comand Line '
+001500190408     A                                  1  3USER
+001700190207     A                                  8 14'4.  Initial number of active jobs -
+001800190116     A                                      for storage allocation'
+001900190207     A                                  9 14'5.  Previous sign on by signed on -
+002000190116     A                                      user'
+002001190207     A                                  1 64DATE
+002002190207     A                                  2 62TIME
+002003190215     A            OPTION         2A  B 11 25
+002005190207     A  30                                  DSPATR(RI)
+002006190207     A  30                                  DSPATR(PC)
+002011190215     A            MSGTXT1       70   O 15 11
+002012190215     A            MSGTXT2       70   O 17 11
+002013190215     A  30                             11 31'A vaild option must be entered'

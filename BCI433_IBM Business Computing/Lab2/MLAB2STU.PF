@@ -1,0 +1,14 @@
+000100190302     A                                      UNIQUE
+000101190302     A          R MSTUDENTSR                TEXT('STUDENT REGISTER')
+000102190302     A            MSTUDENTNO     9S 0       COLHDG('STUDENT' 'NUMBER')
+000103190302     A            MFIRSTNAME    15          COLHDG('FIRST NAME')
+000104190302     A            MLASTNAME     20          COLHDG('LAST NAME')
+000105190302     A            MBIRTHDATE      L
+000106190302     A            MPHONE        10S 0       COLHDG('PHONE' 'NUMBER')
+000107190302     A            MADDRESS      30          COLHDG('STREET' 'ADDRESS')
+000108190302     A            MCITY         15
+000109190302     A            MPROVINCE      2          COLHDG('PROV' 'CODE')
+000110190302     A            MPOSTCODE      6          COLHDG('POSTAL' 'CODE')
+000111190302     A            MFEESOWED      7P 2       COLHDG('FEES' 'OWED')
+000112190302     A            MFINESOWED     7P 2       COLHDG('FINES' 'OWED')
+000113190302     A          K MSTUDENTNO

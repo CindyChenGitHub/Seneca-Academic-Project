@@ -1,0 +1,90 @@
+000100190215             PGM
+000101190215             DCLF       LAB4DSP
+000103190215             DCL        &MsgTxt1  *Char 70
+000104190215             DCL        &MsgTxt2  *Char 70
+000106190215             DCL        &CURLIB   *Char 10
+000107190215             DCL        &MSGQ *Char LEN(10)
+000108190215             DCL        &MSGQL *Char LEN(10)
+000109190215             DCL        &PWDEXPITV *Char 6
+000110190215             DCL        &ACTJOBSN *dec LEN(5 0)
+000111190215             DCL        &ACTJOBS *Char 5
+000112190215             DCL        &RTNUSRPRF *Char 10
+000113190215             DCL        &PRVSIGN *Char 13
+000114190215             DCL        &DATE *Char 8
+000115190215             DCL        &TIME *Char 8
+000116190214
+000117190214             /***MAINLINE***/
+000118190215             SNDRCVF
+000119190215             DoWhile    (&In03 = '0')
+000120190215                CallSubr   INITIALIZE
+000121190215                Select
+000122190215                   When       &In21 Call QUSCmdLn
+000123190215                   When       (&Option = '1' *or &Option = '01') CallSubr OPTION1
+000124190215                   When       (&Option = '2' *or &Option = '02') CallSubr OPTION2
+000125190215                   When       (&Option = '3' *or &Option = '03') Do
+000126190215                      RTVUSRPRF  MSGQ(&MSGQ) MSGQLIB(&MSGQL)
+000127190215                      CHGVAR     VAR(&MSGTXT1) VALUE('Signed on User"s message queue is ' *CAT &MSGQ
+000128190215                                   *CAT &MSGQ)
+000129190215                      CHGVAR     VAR(&MSGTXT2) VALUE('CLLE Program can report on and manage the user
+000130190215                                   system')
+000131190215                   ENDDO
+000132190215
+000133190215                   When       (&Option = '4' *or &Option = '04') CallSubr OPTION4
+000134190215                   When       (&Option = '5' *or &Option = '05') CallSubr OPTION5
+000135190215                   Otherwise  Do
+000136190215                      ChgVar     &in30 '1'
+000137190215                      Chgvar     VAR(&MSGTXT2) VALUE('Please enter from 1-5')
+000138190215                   ENDDO
+000139190215                EndSelect
+000140190215                SNdRCVF
+000141190215             Enddo
+000142190214
+000143190214             /***SUBR OUTINES***/
+000144190215             SUBR       INITIALIZE
+000145190215                ChgVar     &In30 '0'
+000146190215                ChgVar     &MsgTxt1 ' '
+000147190215                ChgVar     &MsgTxt2 ' '
+000148190215             ENDSUBR
+000149190214
+000150190214             /***SUBR OPTION1***/
+000151190215             SUBR       OPTION1
+000152190215                RTVUSRPRF  CURLIB(&CURLIB)
+000153190215                CHGCURLIB  WS433C05
+000154190215                CALL       HWYTOLLRPG
+000155190215                DSPLIBL
+000156190215                CHGCURLIB  &CURLIB
+000157190215                DSPLIBL
+000158190215                CHGVAR     &MsgTxt1 ('The Instructor Version Highway Toll RPGLE program was run')
+000159190215                CHGVAR     &MsgTxt2 ('CLLE Programs can manage how an RPGLE Business Application is
+000160190215             ENDSUBR
+000161190214
+000162190214             /***SUBR OPTION2***/
+000163190215             SUBR       OPTION2
+000164190215                RTVSYSVAL  SYSVAL(QPWDEXPITV) RTNVAR(&PWDEXPITV)
+000165190215                CHGVAR     VAR(&MSGTXT1) VALUE('Password Expirty Interval set to ' *BCAT &PWDEXPITV
+000166190215                CHGVAR     VAR(&MSGTXT2) VALUE('CLLE Program can report on the system and manage sys
+000167190215                             setting')
+000168190215             ENDSUBR
+000169190214
+000170190215             /***SUBR OPTION4***/
+000171190215             SUBR       OPTION4
+000172190215                RTVSYSVAL  SYSVAL(QACTJOB) RTNVAR(&ACTJOBSN)
+000173190215                CHGVAR     &ACTJOBS &ACTJOBSN
+000174190215                CHGVAR     &MSGTXT1 ('Initial number of active jobs for which strage' *BCAT 'is allo
+000175190215                             *CAT &ACTJOBS)
+000176190215                CHGVAR     &MSGTXT2 ('CLLE Programs can report on the system and manage system wide
+000177190215             ENDSUBR
+000178190215
+000179190215             /***SUBR OPTION5***/
+000180190215             SUBR       OPTION5
+000181190215                RTVUSRPRF  RTNUSRPRF(&RTNUSRPRF) PRVSIGN(&PRVSIGN)
+000182190215                CHGVAR     VAR(&DATE) VALUE(%SST(&PRVSIGN 4 2) *CAT '/' *CAT %SST(&PRVSIGN 6 2) *CAT
+000183190215                             %SST(&PRVSIGN 12 2))
+000184190215                CHGVAR     VAR(&TIME) VALUE(%SST(&PRVSIGN 8 2) *CAT ':' *CAT %SST(&PRVSIGN 10 2) *CA
+000185190215                             %SST(&PRVSIGN 12 2))
+000186190215                CHGVAR     VAR(&MSGTXT1) VALUE('Previous sign on for user' *BCAT &RTNUSRPRF *BCAT 'w
+000187190215                             &DATE *CAT &TIME)
+000188190215                CHGVAR     &MSGTXT2 ('CLLE Programs can report and manage the users on the system')
+000189190215             ENDSUBR
+000190190215
+000191190215             ENDPGM
